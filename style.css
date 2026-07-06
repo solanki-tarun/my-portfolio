@@ -1,0 +1,179 @@
+:root {
+    --bg: #0f172a;
+    --text: #fff;
+    --primary: #38bdf8;
+    --card: rgba(255,255,255,0.05);
+  }
+  
+  .light {
+    --bg: #ffffff;
+    --text: #000;
+    --card: rgba(0,0,0,0.05);
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+  }
+  
+  /* NAVBAR */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    backdrop-filter: blur(10px);
+  }
+  
+  nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+  }
+  
+  #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* HERO */
+  /* HERO */
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    min-height:80vh;
+    padding:120px 20px 80px;
+}
+
+.hero h3{
+    color:#38bdf8;
+    font-size:22px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.hero h1{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.hero h1 span{
+    color:#38bdf8;
+}
+
+.hero p{
+    font-size:22px;
+    line-height:1.8;
+    color:#cbd5e1;
+    max-width:750px;
+    margin-bottom:45px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 30px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+}
+
+.btn.outline{
+    background:transparent;
+    color:#38bdf8;
+    border:2px solid #38bdf8;
+}
+
+.btn.outline:hover{
+    background:#38bdf8;
+    color:#000;
+}
+  
+  /* PROJECTS */
+  #projects {
+    padding: 60px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    padding: 20px;
+    background: var(--card);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .links a {
+    margin-right: 10px;
+    color: var(--primary);
+  }
+  
+  /* ABOUT & CONTACT */
+  #about, #contact {
+    padding: 60px;
+    text-align: center;
+  }
+  
+  /* FORM */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  button {
+    padding: 10px;
+    background: var(--primary);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  }

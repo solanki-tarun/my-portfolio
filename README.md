@@ -11,3 +11,4 @@ I am a web developer skilled in HTML, CSS, JavaScript.
 - To-Do App
 - Calculator
 - ss-flour-mill site
+- Tic-Tac Toe game

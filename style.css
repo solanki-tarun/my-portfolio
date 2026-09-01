@@ -117,6 +117,7 @@
   /* PROJECTS */
   #projects {
     padding: 60px;
+    
   }
   
   .grid {
@@ -126,6 +127,7 @@
   }
   
   .card {
+    margin: 10px;
     padding: 20px;
     background: var(--card);
     border-radius: 12px;
@@ -135,12 +137,16 @@
   
   .card:hover {
     transform: translateY(-10px);
+    background-color: rgb(32, 30, 30);
+    color: red;
   }
   
   .links a {
     margin-right: 10px;
     color: var(--primary);
+    text-decoration: none;
   }
+ 
   
   /* ABOUT & CONTACT */
   #about, #contact {
@@ -169,6 +175,14 @@
     border: none;
     cursor: pointer;
   }
+  .contacts{
+    height: full;
+    width: full;
+    background-color: rgb(148, 147, 150);
+    border-radius: 20px;
+  }
+
+   
   
   /* RESPONSIVE */
   @media (max-width: 768px) {
